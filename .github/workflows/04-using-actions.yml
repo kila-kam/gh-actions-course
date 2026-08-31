@@ -17,6 +17,7 @@ jobs:
           node-version: '20.x'
       - name: Install Dependencites
         run: npm ci
+        working-directory: 04-using-actions/react-app
 
 
     #0  Checkout the code from the repository
