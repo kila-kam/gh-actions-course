@@ -1,4 +1,4 @@
-name: 03 - using actions
+name: 04 - Using Actions
 
 on: 
   push:
@@ -15,6 +15,7 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '20.x'
+
       - name: Install Dependencites
         run: npm ci
         working-directory: 04-using-actions/react-app
@@ -22,5 +23,5 @@ jobs:
     #0  Checkout the code from the repository
     #1. Install depedencies of our react appication
     #2. Execute automated tests 
-#npx create-react-app -template typescript react-app
-#npm run start
+    #npx create-react-app -template typescript react-app
+    #npm run start
